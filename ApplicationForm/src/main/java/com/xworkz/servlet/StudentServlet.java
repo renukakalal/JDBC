@@ -40,9 +40,6 @@ public class StudentServlet extends HttpServlet {
 	
 	StudentDTO studentDTO=new StudentDTO(name,email,convertednumber,graduation,branch,convertedcgpa,skills,address);
 	
-	StudentRepo StudentRepoImp=new StudentRepoImp();
-	
-	boolean saved=StudentRepoImp.save(studentDTO);
 	
 	
 	System.out.println("this is name:"+name);
